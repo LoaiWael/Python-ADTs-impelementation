@@ -5,6 +5,7 @@
 
 ***
 
+## Binary search
 ## Stack
 <ul>
 <li>len(object) => stack object lenght</li>
