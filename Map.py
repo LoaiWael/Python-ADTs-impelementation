@@ -99,7 +99,3 @@ class Map:
                self.__mapIndex=binarySearch(self.__key,key)
                return self.__value[self.__mapIndex]
 
-
-x=Map()
-x.append(1,5,9,6,False)
-print(x)
