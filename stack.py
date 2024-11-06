@@ -1,8 +1,8 @@
 class Stack:
 
-    def __init__(self,max):
+    def __init__(self,max: int):
         while type(max)!=int:
-            return "Invalid size or input type. Please enter the size of the stack correctly."
+            raise Exception("invalid max size.")
         self.__stack=[0]*max
         self.__top=-1
 
@@ -33,4 +33,3 @@ class Stack:
             self.__stack[self.__top]=0
             self.__top-=1
             return temp
-    
