@@ -29,6 +29,10 @@ class Queue:
     def Get_rear(self):
         return self.__queue[self.__rear]
     
+    @property
+    def Get_Available_Space(self):
+        return self.__maxSize - self.__numOfItems
+    
     def enqueue(self,element):
         if self.__numOfItems==self.__maxSize :
             return "The queue is full!"
