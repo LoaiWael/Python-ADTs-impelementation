@@ -39,3 +39,18 @@
   <li>remove_Values(key: int, *values) => remove the key values included at the method only</li>
   <li>values_Of(key: int) => return list of the key values</li>
 </ul>
+
+## Queue
+<ul>
+<li>Len(object) => Queue object lenght</li>
+<li>Iterator => Loop over the queue</li>
+<li>enqueue(element) => add element to the queue</li>
+<li>dequeue() => Removes the front element</li>
+<li>isEmpty() => Returns True if empty and False if not</li>
+<li>isFull() => Returns True if it's full and False if not</li>
+<li>clear() => Clears the queue || deletes all the elements</li>
+<li>object.Get_numOfItems => property returns number of elements in the queue</li>
+<li>object.Get_front => property returns the front element</li>
+<li>object.Get_rear => property returns the rear element</li>
+<li>object.Get_Available_Space => property returns the available space in the queue</li>
+</ul>
