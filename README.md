@@ -29,7 +29,7 @@
   <li>difference(object: Set) => returns a new set</li>
 </ul>
 
-## Map
+## Map > using binarySearch.py
 <ul>
   <li>len(object) => Map object lenght</li>
   <li>Itrator => loop on the map</li>
