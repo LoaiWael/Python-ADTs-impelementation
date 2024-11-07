@@ -33,3 +33,9 @@ class Stack:
             self.__stack[self.__top]=0
             self.__top-=1
             return temp
+
+    def isEmpty(self):
+        return self.__top==-1
+    
+    def isFull(self):
+        return self.__top==len(self.__stack)-1
