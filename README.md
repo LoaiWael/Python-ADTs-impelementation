@@ -42,13 +42,30 @@
 
 ## Queue
 <ul>
-<li>Len(object) => Queue object lenght</li>
+<li>len(object) => Queue object lenght</li>
 <li>Iterator => Loop over the queue</li>
 <li>enqueue(element) => add element to the queue</li>
 <li>dequeue() => Removes the front element</li>
 <li>isEmpty() => Returns True if empty and False if not</li>
 <li>isFull() => Returns True if it's full and False if not</li>
 <li>clear() => Clears the queue || deletes all the elements</li>
+<li>object.Get_numOfItems => property returns number of elements in the queue</li>
+<li>object.Get_front => property returns the front element</li>
+<li>object.Get_rear => property returns the rear element</li>
+<li>object.Get_Available_Space => property returns the available space in the queue</li>
+</ul>
+
+## Deque
+<ul>
+<li>len(object) => queue object lenght</li>
+<li>Iterator => loop over the queue</li>
+<li>insert_Left(element) => add element from the left side</li>
+<li>insert_Right(element) => add element from the right side</li>
+<li>remove_Left() => removes element from the left of queue</li>
+<li>remove_Right() => removes element from the right of the queue</li>
+<li>isEmpty() => Returns True if empty and False if not</li>
+<li>isFull() => Returns True if it's full and False if not</li>
+<li>clear() => Clears the deque || deletes all the elements in the queue</li>
 <li>object.Get_numOfItems => property returns number of elements in the queue</li>
 <li>object.Get_front => property returns the front element</li>
 <li>object.Get_rear => property returns the rear element</li>
