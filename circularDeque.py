@@ -3,9 +3,9 @@ class Deque:
         while type(maxSize)!=int:
             raise Exception("invalid max size.")
         self.__maxSize=maxSize
-        self.__deque=[None]*self.__maxSize
-        self.__front=(len(self.__deque)//2)
-        self.__rear=(len(self.__deque)//2)-1
+        self.__deque=[]*self.__maxSize
+        self.__front=0
+        self.__rear=-1
         self.__numOfItems=0
         
     def __str__(self):
@@ -36,28 +36,34 @@ class Deque:
     def insert_Left(self,element):
         if self.__numOfItems==self.__maxSize :
             return "The Deque is full!"
-        self.__front=(self.__front-1)%self.__maxSize
-        self.__deque[self.__front]=element
+        elif self.__front!=0:
+            self.__front+=1
+        self.__rear=(self.__rear+1)%self.__maxSize
+        self.__deque.insert(self.__front,element)
         self.__numOfItems+=1
         
     def insert_Right(self,element):
         if self.__numOfItems==self.__maxSize :
             return "The Deque is full!"
         self.__rear=(self.__rear+1)%self.__maxSize
-        self.__deque[self.__rear]=element
+        self.__deque.insert(self.__rear,element)
         self.__numOfItems+=1
         
     def remove_Left(self):
         if self.__numOfItems==0:
             return "The Deque is empty!"
-        self.__deque[self.__front]=None
-        self.__front=(self.__front+1)%self.__maxSize
+        elif self.__front==-1:
+            self.__front+=1
+        self.__deque.remove(self.__deque[self.__front])
+        self.__rear=(self.__rear-1)%self.__maxSize
         self.__numOfItems-=1
         
     def remove_Right(self):
         if self.__numOfItems==0:
             return "The Deque is empty!"
-        self.__deque[self.__rear]=None
+        elif self.__rear==-1:
+            self.__rear+=1
+        self.__deque.remove(self.__deque[self.__rear])
         self.__rear=(self.__rear-1)%self.__maxSize
         self.__numOfItems-=1
         
