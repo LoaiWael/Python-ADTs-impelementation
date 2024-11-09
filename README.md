@@ -40,7 +40,7 @@
   <li>values_Of(key: int) => return list of the key values</li>
 </ul>
 
-## Queue
+## circularQueue
 <ul>
 <li>len(object) => Queue object lenght</li>
 <li>Iterator => Loop over the queue</li>
@@ -55,7 +55,7 @@
 <li>object.Get_Available_Space => property returns the available space in the queue</li>
 </ul>
 
-## Deque
+## circularDeque
 <ul>
 <li>len(object) => queue object lenght</li>
 <li>Iterator => loop over the queue</li>
