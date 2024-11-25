@@ -71,3 +71,15 @@
 <li>object.Get_rear => property returns the rear element</li>
 <li>object.Get_Available_Space => property returns the available space in the queue</li>
 </ul>
+
+## linkedList
+<ul>
+<li>Iterstor => loop over the list data</li>
+<li>getSize => property gets to you the lenght of the list</li>
+<li>isEmpty => property checks whether the list is empty or not</li>
+<li>Clear() => clears the list</li>
+<li>search() => searchs on an item and returns true if exists</li>
+<li>insert(item, position: int) => inserts an item in its given posotion if the position exists</li>
+<li>append(item) => put an item at the end of the list</li>
+<li>remove(item) => removes an item from the list if exists</li>
+<li>insertAtBegginning(item) => insert an item at the begginning of the list || same as insert(item, 0)</li>
