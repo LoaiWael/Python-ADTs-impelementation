@@ -74,7 +74,7 @@
 
 ## linkedList
 <ul>
-<li>Iterstor => loop over the list data</li>
+<li>Iterator => loop over the list data</li>
 <li>getSize => property gets to you the lenght of the list</li>
 <li>isEmpty => property checks whether the list is empty or not</li>
 <li>Clear() => clears the list</li>
@@ -83,3 +83,18 @@
 <li>append(item) => put an item at the end of the list</li>
 <li>remove(item) => removes an item from the list if exists</li>
 <li>insertAtBegginning(item) => insert an item at the begginning of the list || same as insert(item, 0)</li>
+
+## doubleLinkedList
+<ul>
+<li>Iterator => loop over the list data</li>
+<li>len(object) => get the list lenght</li>
+<li>isEmpty => property checks whether the list is empty or not</li>
+<li>getFirst => property gets the head element or the one at the first</li>
+<li>getLast => property gets the last element in the list</li>
+<li>insertAtBeggin(data) => insert data at the first</li>
+<li>insertAtEnd(data) => insert data at the end of the list</li>
+<li>insert(data, posotion: int) => insert data at any position</li>
+<li>deleteLast() => deletes only the last item</li>
+<li>deleteFirst() => deletes only the first item</li>
+<li>deleteData(data) => deletes the given data from the list</li>
+</ul>

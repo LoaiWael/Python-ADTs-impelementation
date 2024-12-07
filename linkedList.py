@@ -15,7 +15,10 @@ class Node:
         return self.__next
     
     def setNext(self,newNext):
-        self.__next=newNext
+        if newNext==None or isinstance(newNext,Node):
+            self.__next=newNext
+        else:
+            raise Exception("Invalid next input, next must be node or none")
         
 class LinkedList:
     def __init__(self):
