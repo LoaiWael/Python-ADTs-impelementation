@@ -83,6 +83,7 @@
 <li>append(item) => put an item at the end of the list</li>
 <li>remove(item) => removes an item from the list if exists</li>
 <li>insertAtBegginning(item) => insert an item at the begginning of the list || same as insert(item, 0)</li>
+</ul>
 
 ## doubleLinkedList
 <ul>
