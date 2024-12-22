@@ -1,9 +1,7 @@
 class Stack:
 
     def __init__(self,max: int):
-        while type(max)!=int:
-            raise Exception("invalid max size.")
-        self.__stack=[0]*max
+        self.__stack=[None]*max
         self.__top=-1
 
     def __str__(self):
@@ -19,18 +17,18 @@ class Stack:
         return self.__stack[self.__top]
     
     def push(self,num):
-        if self.__top == len(self.__stack)-1:
+        if self.isFull():
             return "The stack is full!"
         else:
             self.__top+=1
             self.__stack[self.__top]=num
 
     def pop(self):
-        if self.__top == -1:
+        if self.isEmpty():
             return "The stack is empty!"
         else:
             temp=self.__stack[self.__top]
-            self.__stack[self.__top]=0
+            self.__stack[self.__top]=None
             self.__top-=1
             return temp
 
