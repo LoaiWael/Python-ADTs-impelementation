@@ -83,6 +83,7 @@
 <li>append(item) => put an item at the end of the list</li>
 <li>remove(item) => removes an item from the list if exists</li>
 <li>insertAtBegginning(item) => insert an item at the begginning of the list || same as insert(item, 0)</li>
+</ul>
 
 ## doubleLinkedList
 <ul>
@@ -97,4 +98,16 @@
 <li>deleteLast() => deletes only the last item</li>
 <li>deleteFirst() => deletes only the first item</li>
 <li>deleteData(data) => deletes the given data from the list</li>
+</ul>
+
+## binarySearchTree
+<ul>
+<li>isEmpty => property checks if tree is empty or not</li>
+<li>getRoot => property returns the root element</li>
+<li>getMin => property returns the minimum number</li>
+<li>getMax => property returns the maximum</li>
+<li>insert(data) => inserts number to the tree</li>
+<li>inOrderT(func=print) => looping over the tree in order for an action</li>
+<li>preOrderT(func=print) => looping over the tree pre order for an action</li>
+<li>postOrderT(func=print) => looping over the tree post order for an action</li>
 </ul>
