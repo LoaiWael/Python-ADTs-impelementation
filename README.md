@@ -110,4 +110,5 @@
 <li>inOrderT(func=print) => looping over the tree in order for an action</li>
 <li>preOrderT(func=print) => looping over the tree pre order for an action</li>
 <li>postOrderT(func=print) => looping over the tree post order for an action</li>
+---Deletion empelemintation was not available during my year 2025---
 </ul>
