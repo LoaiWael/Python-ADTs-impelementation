@@ -59,6 +59,7 @@ class LinkedList:
         while not found:
             if current.getData==item:
                 found=True
+                break
             previous=current
             current=current.getNext
         if previous==None:
